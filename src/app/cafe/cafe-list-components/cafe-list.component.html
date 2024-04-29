@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<body>
+
+<div>
+  <table class="table">
+    <thead>
+    <tr>
+      <th>#</th>
+      <th>Nombre</th>
+      <th>Tipo</th>
+      <th>Región</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let cafe of cafes" style="background-color: #333;">
+      <td>{{ cafe.id }}</td>
+      <td>{{ cafe.nombre }}</td>
+      <td>{{ cafe.tipo }}</td>
+      <td>{{ cafe.region }}</td>
+    </tr>
+    </tbody>
+  </table>
+</div>
+
+<div>
+  <h3>Total café origen: {{ cafeOrigen }}</h3>
+  <h3>Total café blend: {{ cafeBlend }}</h3>
+</div>
+</body>
+
+</html>
